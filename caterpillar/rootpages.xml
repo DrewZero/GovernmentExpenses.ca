@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<CATERPILLAR>
+
+	<!-- 
+	Identifies the log filename and the warning level to log 
+		// Warning Level specifies how many warnings/errors you want logged
+		// Warning Level 0 only prints fatal errors
+		// Warning Level 1 prints all errors and warnings
+		// Warning Level 2 prints all errors and warnings and extra information messages
+		// Warning Level 3 prints all previous info plus additional verbose debugging details
+	-->
+	<LOGGING FILENAME="errors.log" WARNINGLEVEL="3"></LOGGING>
+
+	
+	<!-- This is the database to use for our repository -->
+	<DATABASE NAME="TRAVELDB" CONNECTIONSTRING="Data Source=svr2.proxeasy.com;Database=metamorph2;uid=caterpillar;pwd=metamorphosis" TABLE="raw_travel"></DATABASE>
+	<DATABASE NAME="HOSPITALITYDB" CONNECTIONSTRING="Data Source=svr2.proxeasy.com;Database=metamorph2;uid=caterpillar;pwd=metamorphosis" TABLE="raw_hospitality"></DATABASE>
+
+	
+	<!--
+	*** PDF DEPARTMENTS ***
+	<ROOTPAGE URLTYPE="DAIRY" URL="http://www.cdc-ccl.gc.ca/cdc/printerFriendly.asp?caid=835&amp;pgid=2072&amp;blnlang=1"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_BANK_OF_CANADA_other_transportation" URL="http://www.bankofcanada.ca/en/expenses/index.html"></ROOTPAGE>
+	-->
+
+  <!--
+	*** REGULAR DEPARTMENTS ***
+  -->
+
+<!--
+  <ROOTPAGE URLTYPE="AGR" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1211496031047"></ROOTPAGE>
+  
+  <ROOTPAGE URLTYPE="THREELEVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FOURLEVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/disclose-divulgation/travhosp-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/select-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FOURLEVEL_TREASURY_BOARD_OF_CANADA" URL="http://www.tbs-sct.gc.ca/pd-dp/dthe-dfva/index-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_CHRO" URL="http://www.tbs-sct.gc.ca/expenses-frais/reports-rapports-eng.asp?empType=7"></ROOTPAGE>
+
+	Foreign Affairs
+	<ROOTPAGE URLTYPE="THREELEVEL_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/names-noms.aspx?lang=eng&amp;dept=faae"></ROOTPAGE>
+	International Trade
+	<ROOTPAGE URLTYPE="THREELEVEL_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/names-noms.aspx?lang=eng&amp;dept=itci"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="FOURLEVEL_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/menu-eng.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PAUL-MARTIN-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=4&amp;dept=8&amp;id=74&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PAUL-MARTIN-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=4&amp;dept=8&amp;id=77&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PAUL-MARTIN-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=4&amp;dept=8&amp;id=211&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="STEPHEN-HARPER-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=1&amp;dept=34&amp;id=256&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="STEPHEN-HARPER-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=1&amp;dept=34&amp;id=355&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="STEPHEN-HARPER-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/year_list.asp?cat=1&amp;dept=34&amp;id=361&amp;Language=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FIVE-SIX-LEVEL_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/index.asp?lang=eng"></ROOTPAGE>
+
+
+	<ROOTPAGE URLTYPE="FOURLEVEL_ACOA" URL="http://cms.acoa-apeca.gc.ca/NR/exeres/9A3DA8EB-76E5-41E4-9756-316AFD7B850F.htm?lang=en"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/pd_lp_e_952.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FOURLEVEL_CBSA" URL="http://www.cbsa-asfc.gc.ca/pd-dp/th-va/menu-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FOURLEVEL_CED" URL="http://www.dec-ced.gc.ca/eng/disclosure/travel-hospitality/index.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="FOURLEVEL_CSPS" URL="http://www.csps-efpc.gc.ca/pdi/trho/index-eng.asp"></ROOTPAGE>
+
+
+	<ROOTPAGE URLTYPE="FOURLEVEL_ENVIRONMENT_CANADA" URL="http://www.ec.gc.ca/dthe-dfva/index.cfm?lang=En&amp;n=2D9DD7DF-11"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FOURLEVEL_CATSA" URL="http://www.catsa.gc.ca/page.aspx?id=49&amp;pname=ProactiveDisclosure_DivulgationProactive&amp;lang=en"></ROOTPAGE>
+
+
+  TODO - add new urls here as they are posted
+  <ROOTPAGE URLTYPE="ONELEVEL_CAPPRT" URL="http://www.capprt-tcrpap.gc.ca/eic/site/capprt-tcrpap.nsf/eng/tn00542.html"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="ONELEVEL_CAPPRT" URL="http://www.capprt-tcrpap.gc.ca/eic/site/capprt-tcrpap.nsf/eng/tn00459e.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="ONELEVEL_CAPPRT" URL="http://www.capprt-tcrpap.gc.ca/eic/site/capprt-tcrpap.nsf/eng/tn00413e.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_CAPPRT" URL="http://www.capprt-tcrpap.gc.ca/eic/site/capprt-tcrpap.nsf/eng/tn00159e.html"></ROOTPAGE>
+
+
+	<ROOTPAGE URLTYPE="ZEROLEVEL_CCOHS" URL="http://www.ccohs.ca/ccohs/reports/pres_travel.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="ZEROLEVEL_CCOHS" URL="http://www.ccohs.ca/ccohs/reports/vpres_travel.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="THREELEVEL_CFIA" URL="http://active.inspection.gc.ca/eng/agen/proactive/travoy/dise.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_CEAA" URL="http://www.ceaa-acee.gc.ca/dthe-dfva/index.cfm?lang=en&amp;state=reports"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_CFGB" URL="http://www.cfgb-cgfc.gc.ca/english/PD_Expense.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="THREELEVEL_CGC" URL="http://www.grainscanada.gc.ca/pd-dp/dthe-dfva/sle-cs-eng.htm"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="THREELEVEL_HEALTH_CANADA" URL="http://www.thexpenses-fraisva.hc-sc.gc.ca/cfob/dpfad/expensetracking.nsf/WebPage?ReadForm&amp;Years=1&amp;lang=eng"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="THREELEVEL_CIHR" URL="http://www.cihr-irsc.gc.ca/e/22068.html"></ROOTPAGE>
+	
+  <ROOTPAGE URLTYPE="FIVELEVEL_CHRC" URL="http://www.chrc-ccdp.ca/about/expenserpts_rappdepenses/expenserpts_rappdepenses-en.asp"></ROOTPAGE>
+	
+  <ROOTPAGE URLTYPE="THREELEVEL_CIDA" URL="http://www.acdi-cida.gc.ca/acdi-cida/ACDI-CIDA.nsf/eng/JUD-11274511-GYG"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="CITT" URL="http://www.citt-tcce.gc.ca/proactive/expenses/expenses_e.asp"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="INDUSTRY_CANADA" URL="http://www.ic.gc.ca/app/ic/trvlHsptltyDsclsr/pblc/indx.do?lang=eng"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="CNSC" URL="http://www.nuclearsafety.gc.ca/eng/proactive_disclosure/travel/"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="CRTC" URL="http://support.crtc.gc.ca/expenses/reports-rapports_e.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CSA" URL="http://www5.asc-csa.gc.ca/ENG/publications/president.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CSA" URL="http://www5.asc-csa.gc.ca/ENG/publications/archive.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CTA" URL="http://www.otc-cta.gc.ca/pd-cp/expenses-frais.php?&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CIC" URL="http://www.cic.gc.ca/english/disclosure/expenses/menu-minister-finley.asp"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="CIC" URL="http://www.cic.gc.ca/english/disclosure/expenses/menu-minister.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CIC" URL="http://www.cic.gc.ca/english/disclosure/expenses/menu-senior.asp"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="CPC" URL="http://www.cpc-cpp.gc.ca/PRD/the-fva/index-eng.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CMF" URL="http://www.fja-cmf.gc.ca/pd-dp/expenses-frais/index-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CT" URL="http://www.ct-tc.gc.ca/Proactive/TravelHospitality-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CB" URL="http://www.cb-cda.gc.ca/about-apropos/disclosure-divulgation/expenses-frais/index-e.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="OCI" URL="http://www.oci-bec.gc.ca/disc-div/trav-voy/index-eng.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CSC" URL="http://www.csc-scc.gc.ca/text/travel/travel-eng.shtml"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="CAS" URL="http://cas-ncr-nter03.cas-satj.gc.ca/portal/page/portal/proactive_eng/t-v_eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PPSC" URL="http://www.ppsc.gc.ca/eng/prd-dpr/trh-vac.html"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="EC" URL="http://www.elections.ca/content.aspx?section=res&amp;dir=rep/pro/exp&amp;document=index&amp;lang=e"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FD" URL="http://southernontario-suddelontario.gc.ca/app/fdo/trvlHsptltyDsclsr/pblc/indx.do?lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FCAC" URL="http://www.fcac-acfc.gc.ca/eng/Disclosure/Expenses-eng.asp?View=V0"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="FINTRAC" URL="http://www.fintrac-canafe.gc.ca/publications/PD/pd/date-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="DFO" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/index_e.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="HMIRC" URL="http://www.hmirc-ccrmd.gc.ca/disclosure-divulgation/travel-voyage/index-eng.shtml"></ROOTPAGE>
+
+  <ROOTPAGE URLTYPE="HRSDC" URL="http://www6.hrsdc.gc.ca/introductioncdn-eng.jsp?site=1&amp;section=1"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="HRSDC" URL="http://www6.hrsdc.gc.ca/introductioncdn-eng.jsp?site=2&amp;section=1"></ROOTPAGE>
+  
+  
+  <ROOTPAGE URLTYPE="IRB" URL="http://www.irb-cisr.gc.ca/eng/disdiv/travoy/Pages/index.aspx"></ROOTPAGE>
+-->
+  <ROOTPAGE URLTYPE="AINC2" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/07-2/davisc/07-h1-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="AINC2" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/07-2/davisc/07-h2-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="AINC" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/qts-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="AINC" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/index-eng.asp"></ROOTPAGE>
+<!--
+	<ROOTPAGE URLTYPE="FIVELEVEL_CH" URL="http://www.pch.gc.ca/pc-ch/dp-pd/va-th/index-eng.cfm"></ROOTPAGE>
+	
+	<ROOTPAGE URLTYPE="INFC" URL="http://www.infc.gc.ca/pd-dp/dthe-dfva/minister-ministre-eng.php"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFC" URL="http://www.infc.gc.ca/pd-dp/dthe-dfva/senior-superieurs-eng.php"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TC" URL="http://wwwapps2.tc.gc.ca/corp-serv-gen/2/dth-dva/disclosure/menu.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="DOJ" URL="http://www.justice.gc.ca/eng/dept-min/pd-dp/empl.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="LIB" URL="http://www.collectionscanada.gc.ca/disclosure/expenses/index-e.html"></ROOTPAGE>
+
+  
+  Miscategorized RCMP expenses
+	<ROOTPAGE URLTYPE="RCMP_HOSPITALITY" URL="http://www.grc-rcmp.gc.ca/pd-dp/travhosp-voyacc/2004-03-01/zaccardelli/hosp-acc/2004-01-01-eng.htm"></ROOTPAGE>
+  All the rest
+	<ROOTPAGE URLTYPE="RCMP" URL="http://www.grc-rcmp.gc.ca/pd-dp/travhosp-voyacc/index-eng.htm"></ROOTPAGE>
+  
+	<ROOTPAGE URLTYPE="NAFTA" URL="http://www.nafta-alena.gc.ca/en/view.aspx?x=294"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="NEB" URL="http://www.neb-one.gc.ca/trvlndhsptlty/rprtngmplys.aspx?lang=e"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="FPCC" URL="http://fpcc-cpac.gc.ca/index.php/eng/component/content/45?task=view"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="SWC" URL="http://www.swc-cfc.gc.ca/account-resp/pd-dp/dthe-dfva/index-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="ONF" URL="http://www.onf-nfb.gc.ca/eng/about-us/publications/"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="NPB" URL="http://pbc-clcc.gc.ca/rprts/th-eng.shtml"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="MPCC2" URL="http://www.mpcc-cppm.gc.ca/600/6100/cobetto-eng.aspx" member="Louise Cobetto" title="Chairperson"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="MPCC" URL="http://www.mpcc-cppm.gc.ca/600/6100/index-eng.aspx"></ROOTPAGE>
+	
+  <ROOTPAGE URLTYPE="NRC" URL="http://www.nrc-cnrc.gc.ca/eng/disclosure/travel/index.php?action=employees"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="VRAB" URL="http://www.vrab-tacra.gc.ca/Proactive-Divulgation/Expense-frais-eng.cfm"></ROOTPAGE>
+
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=1"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=2"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=3"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=1&amp;archive=true"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=2&amp;archive=true"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="VAC" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/list_staff&amp;cat_id=3&amp;archive=true"></ROOTPAGE>
+
+  <ROOTPAGE URLTYPE="INFO_TRAVEL1" URL="http://www.infocom.gc.ca/eng/pd-dp-te-dv-2005-2006.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_TRAVEL1" URL="http://www.infocom.gc.ca/eng/pd-dp-te-dv-2006-2007.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_TRAVEL2" URL="http://www.infocom.gc.ca/eng/pd-dp-te-dv-2007-2008.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_TRAVEL3" URL="http://www.infocom.gc.ca/eng/pd-dp_te-dv_default.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_HOSPITALITY1" URL="http://www.infocom.gc.ca/eng/pd-dp_he-fa_2005-2006.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_HOSPITALITY1" URL="http://www.infocom.gc.ca/eng/pd-dp_he-fa_2006-2007.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_HOSPITALITY1" URL="http://www.infocom.gc.ca/eng/pd-dp_he-fa_2007-2008.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="INFO_HOSPITALITY2" URL="http://www.infocom.gc.ca/eng/pd-dp_he-fa_default.aspx"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="CHRT" URL="http://chrt-tcdp.gc.ca/NS/disclosures-divulgations/the-dfva-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="OCOL" URL="http://www.ocol-clo.gc.ca/html/travelhosp_depaccueil_e.php"></ROOTPAGE>
+
+-->
+  <ROOTPAGE URLTYPE="HRM" URL="http://humanrightsmuseum.ca/about-museum/corporate-governance/corporate-reports/travel-and-hospitality-expenses"></ROOTPAGE>
+<!--
+  This link was missing from the main page - it was combined with 2010 by accident
+	<ROOTPAGE URLTYPE="NRTEE2" URL="http://www.nrtee-trnee.com/eng/about-us/proactive-disclosure/travel-hospitality/David-McLaughlin-2009-eng.cfm"></ROOTPAGE>
+  All the rest
+	<ROOTPAGE URLTYPE="NRTEE" URL="http://www.nrtee-trnee.com/eng/about-us/proactive-disclosure/travel-hospitality/travel-hospitality-reports.php"></ROOTPAGE>
+	
+	<ROOTPAGE URLTYPE="NRCAN" URL="http://www2.nrcan-rncan.gc.ca/dthe-cfva/index-eng.cfm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="NSERC" URL="http://www.nserc-crsng.gc.ca/Disclosure-Divulgation/travel-voyage_eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PC" URL="http://www.pc.gc.ca/apps/thr/index_e.asp?oqCEO=1"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PC" URL="http://www.pc.gc.ca/apps/thr/index_e.asp"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PMPRB" URL="http://www.pmprb-cepmb.gc.ca/english/View.asp?x=255"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PRIV" URL="http://www.priv.gc.ca/pd-dp/th-va/index_e.cfm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSIC" URL="http://www.psic-ispc.gc.ca/about_apropos/travel_voyages-en.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PUBLICSAFETY" URL="http://www.publicsafety.gc.ca/abt/trv_hsp/index-eng.aspx"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/barrados/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/vennat/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/pelletier/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/gauld/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/robinson/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/dolan/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-1/barrados/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-1/pelletier/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-1/armit/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_TRAVEL" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2003-2004/qua-tri-3/barrados/tra-voy-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-3/mongeon/hos-acc-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-3/dolan/hos-acc-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/barrados/hos-acc-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/pelletier/hos-acc-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/gauld/hos-acc-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSC2_HOSPITALITY" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/2004-2005/qua-tri-2/robinson/hos-acc-eng.htm"></ROOTPAGE>	
+	<ROOTPAGE URLTYPE="PSC" URL="http://www.psc-cfp.gc.ca/disclosure-divulgation/trav/index-eng.htm"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PSLRB_HOSPITALITY" URL="http://www.pslrb-crtfp.gc.ca/pd/expenses/Y.TarteHospitality2004-June11_e.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="PSLRB" URL="http://www.pslrb-crtfp.gc.ca/pd/expenses/TravelandHospitalityExpenses_e.asp"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PSST" URL="http://www.psst-tdfp.gc.ca/article.asp?id=2401"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TPSGC" URL="http://www.tpsgc-pwgsc.gc.ca/proactive/voyage-travel/index-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="ERC" URL="http://www.erc-cee.gc.ca/proactive/travel-voyage/index-eng.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="OCL" URL="http://www.ocl-cal.gc.ca/eic/site/lobbyist-lobbyiste1.nsf/eng/nx00122.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="GG" URL="http://archive.gg.ca/osgg-bsgg/pd-dp/trv-hsp/index_e.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="SERVICECANADA" URL="http://disclosure.servicecanada.gc.ca/introductioncdn-eng.jsp?site=3&amp;section=1"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="SSHRC" URL="http://www.sshrc.ca/disclosure-divulgation/expenses-depenses/expense_archive-eng.aspx"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="SSHRC" URL="http://www.sshrc.ca/disclosure-divulgation/expenses-depenses/expenses-depenses-eng.aspx"></ROOTPAGE>
+  
+	<ROOTPAGE URLTYPE="STATCAN" URL="http://www.statcan.gc.ca/about-apercu/expense-depense/index-eng.htm"></ROOTPAGE>
+	
+  <ROOTPAGE URLTYPE="OSFI" URL="http://www.osfi-bsif.gc.ca/WebApps/THFIS/THFISExpenseReports.aspx?LANG=E"></ROOTPAGE>
+  
+	<ROOTPAGE URLTYPE="SCC" URL="http://www.scc-csc.gc.ca/pd-dp/th-va/index-eng.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TELEFILM" URL="http://www.telefilm.gc.ca/01/10.asp?lang=en"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TATC" URL="http://www.tatc.gc.ca/pd-cp/expenses-frais.php?&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TSB" URL="http://www.tsb.gc.ca/eng/divulgation-disclosure/frais-expenses/index.asp"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="SIRC" URL="http://www.sirc-csars.gc.ca/prddpr/expdpn/chfpra-eng.html" member="Paule Gauthier" title="Former Chair"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="SIRC" URL="http://www.sirc-csars.gc.ca/prddpr/expdpn/chrprs-eng.html" member="Gary Filmon" title="Chair"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="SIRC" URL="http://www.sirc-csars.gc.ca/prddpr/expdpn/exddex-eng.html" member="Susan Pollak" title="Executive Director"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="WD" URL="http://www.wd.gc.ca/eng/113.asp"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="PHAC" URL="http://www.thexpenses-fraisva.phac-aspc.gc.ca/phac/pd/pd_travel.nsf/WebAboutTH/AboutTH?OpenDocument&amp;L=E&amp;"></ROOTPAGE>
+
+-->
+</CATERPILLAR>

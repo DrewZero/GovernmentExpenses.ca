@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Butterfly">
+</Property><Property Name="Solution File" Value="D:\BINE Projects\Metamorph\butterfly\Butterfly.sln">
+</Property><Property Name="User Options File" Value="D:\BINE Projects\Metamorph\butterfly\Butterfly.suo">
+</Property><Property Name="Date" Value="Wednesday December-08-10">
+</Property><Property Name="Time" Value="21:34 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Butterfly.sln" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Butterfly.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Butterfly.suo" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Butterfly.suo">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Butterfly.csproj" Description="Project file successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Butterfly.csproj">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Butterfly.csproj.user" Description="Project user file successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Butterfly.csproj.user">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="about.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\about.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="about.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\about.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="average_amount.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\average_amount.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="average_amount.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\average_amount.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="contact.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\contact.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="contact.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\contact.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="custom_reports.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\custom_reports.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="custom_reports.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\custom_reports.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="donate.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\donate.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="donate.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\donate.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="download_report.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\download_report.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="download_report.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\download_report.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_hospitality.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_hospitality.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_hospitality.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_hospitality.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_travel.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_travel.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_travel.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_travel.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_flight.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_flight.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_flight.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_flight.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_flights.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_flights.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_flights.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_flights.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="largest_expenses.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\largest_expenses.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="largest_expenses.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\largest_expenses.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="name_mappings.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\name_mappings.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="name_mappings.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\name_mappings.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="PageUtils.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\PageUtils.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_titles.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_titles.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_titles.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_titles.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_trip_expense.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_trip_expense.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_trip_expense.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_trip_expense.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="lowest_expenses.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\lowest_expenses.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="lowest_expenses.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\lowest_expenses.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_lowest_expense.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_lowest_expense.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_lowest_expense.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_lowest_expense.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="expense_count.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\expense_count.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="expense_count.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\expense_count.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="individual_expenses.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\individual_expenses.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="individual_expenses.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\individual_expenses.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="most_expenses.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\most_expenses.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="most_expenses.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\most_expenses.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_expense.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_expense.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_expense.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_expense.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="smallest_expenses.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\smallest_expenses.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="smallest_expenses.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\smallest_expenses.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_expenses.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_expenses.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_expenses.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_expenses.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Default.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Default.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Default.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Default.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="default.master.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\default.master.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="default.master.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\default.master.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="departments.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\departments.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="departments.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\departments.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="drilldown.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\drilldown.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="drilldown.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\drilldown.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Reports.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Reports.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_spenders.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_spenders.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_spenders.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_spenders.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.aspx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.aspx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.aspx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="year_dollar.ascx.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\year_dollar.ascx.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="year_dollar.ascx.designer.cs" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\year_dollar.ascx.designer.cs">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="images\Dollar Flag.psd" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\images\Dollar Flag.psd">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="custom_reports.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\custom_reports.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Default.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Default.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="default.css" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\default.css">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="donate.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\donate.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="download_report.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\download_report.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="drilldown.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\drilldown.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="flash\donate.swf" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\flash\donate.swf">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="flash\total.xml" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\flash\total.xml">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="images\dollarflag.gif" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\images\dollarflag.gif">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_hospitality.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_hospitality.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="search_travel.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\search_travel.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Web.config" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\Web.config">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="about.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\about.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="average_amount.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\average_amount.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="contact.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\contact.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_flight.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_flight.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_flights.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_flights.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="largest_expenses.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\largest_expenses.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="name_mappings.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\name_mappings.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_titles.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_titles.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_trip_expense.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_trip_expense.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="lowest_expenses.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\lowest_expenses.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_lowest_expense.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_lowest_expense.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="expense_count.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\expense_count.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="individual_expenses.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\individual_expenses.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="most_expenses.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\most_expenses.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="show_top_expense.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\show_top_expense.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="smallest_expenses.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\smallest_expenses.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_expenses.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_expenses.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="default.master" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\default.master">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="departments.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\departments.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="top_spenders.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\top_spenders.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="trip_duration.aspx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\trip_duration.aspx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="year_dollar.ascx" Description="File successfully backed up as D:\BINE Projects\Metamorph\butterfly\Backup\year_dollar.ascx">
+</Event><Event ErrorLevel="0" Project="Butterfly" Source="Butterfly.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="Butterfly" Source="Butterfly.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="Butterfly.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Butterfly.sln" Description="Converted">
+</Event></UpgradeLog>

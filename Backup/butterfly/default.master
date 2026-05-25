@@ -1,0 +1,186 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="default.master.cs" Inherits="Metamorph._default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+	<link rel="stylesheet" href="/default.css" type="text/css" media="all" />
+    <link rel="SHORTCUT ICON" href="/favicon.ico" />
+	<meta name="description" content="Canadian Government Expenses - 
+	This site reveals who is spending your hard-earned tax money and what they 
+	are spending it on.  Find out the truth about your Canadian tax dollars here." />
+
+	<script type="text/javascript">
+		window.google_analytics_uacct = "UA-3140351-19";
+	</script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+    <br />
+    
+    <div class="master">
+
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+				<td width="200"><a href="/" class="nounderline"><img src="/images/dollarflag.gif" alt="Canadian Government Expenses" border="0" /></a></td>
+				<td align="center"><a href="/" class="nounderline"><h1 class="test">Canadian Government Expenses</h1></a>
+				</td>
+			</tr>
+		</table>
+
+		<br />
+
+		<table width="100%">
+			<tr>
+				<td>
+					<div class="roundedbutton" style="width:100px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/">Home</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:100px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/largest_expenses.aspx">Largest</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:100px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/smallest_expenses.aspx">Smallest</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:100px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/expense_count.aspx">Counts</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:110px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/trip_duration.aspx">Durations</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:120px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/average_amount.aspx">Averages</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+				<td>
+					<div class="roundedbutton" style="width:100px">
+					<b class="rtop">
+					  <b class="r1"></b> <b class="r2"></b> <b class="r3"></b> <b class="r4"></b>
+					</b>
+					<a href="/custom_reports.aspx" class="hilite_link">Custom</a>
+					<b class="rbottom">
+					  <b class="r4"></b> <b class="r3"></b> <b class="r2"></b> <b class="r1"></b>
+					</b>
+					</div> 
+				</td>
+			</tr>
+		</table>
+	    
+
+		<br />
+		
+<asp:Panel ID="pnlTopAds" runat="server" BorderWidth="1" Height="78">
+<center>
+
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td align="center" style="padding-left:10px;padding-right:10px;">
+	<h2><a href="/custom_reports.aspx" class="hilite_link">The data is now open, searchable and downloadable in Excel format</a></h2>
+</td>
+<td align="right">
+	<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHalifax-NS%2FCanadian-Government-Expenses%2F138142646231040&amp;width=220&amp;connections=0&amp;stream=false&amp;header=false&amp;height=70" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:230px; height:70px;" allowTransparency="true"></iframe>
+</td>
+</tr>
+</table>
+
+<%-- 
+<script type="text/javascript"><!--
+	google_ad_client = "pub-7497021451422292";
+	/* Government Expenses Leaderboard */
+	google_ad_slot = "4959542719";
+	google_ad_width = 728;
+	google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+--%>
+</center>
+</asp:Panel>
+
+
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+</asp:ContentPlaceHolder>
+
+		<br /><br />
+		<br />
+		
+		<center>
+			<div>
+				Want more reports?  <a href="/contact.aspx">Contact Us</a>
+				&nbsp; | &nbsp; 
+				<a href="/about.aspx">About Us / Disclaimer</a>
+			</div>
+			<br />
+			<div class="smalltext">Copyright &copy; 2009 <a href="http://bine.ca/">Bine</a> Consulting Corp.</div>
+			<br />
+			<asp:Label ID="lblGenerated" runat="server" CssClass="tinytext"></asp:Label>
+		</center>		
+
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-3140351-19");
+		pageTracker._trackPageview();
+		} catch(err) {}</script>
+
+    </div>
+    </form>
+</body>
+</html>

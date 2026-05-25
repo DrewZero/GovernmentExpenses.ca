@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<CATERPILLAR>
+
+	<LOGGING FILENAME="errors.log" WARNINGLEVEL="3"></LOGGING>
+
+	<DATABASE NAME="TRAVELDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="sandbox_travel"></DATABASE>
+	<DATABASE NAME="HOSPITALITYDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="sandbox_hospitality"></DATABASE>
+
+
+	<!-- ****EVERYTHING BELOW HERE IS TEST ONLY**** -->
+
+	<!-- SINGLE URL TESTS -->
+	<URLTYPE NAME="TEST_TRAVEL_AGRICULTURE">
+		<RECORDLIST REGEX="TRAVEL_AGRICULTURE_AND_AGRI-FOOD_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_AGRICULTURE">
+		<RECORDLIST REGEX="HOSPITALITY_AGRICULTURE_AND_AGRI-FOOD_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD">
+		<RECORDLIST REGEX="TRAVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="dd-MM-yyyy">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_CANADA_INDUSTRIAL_RELATIONS_BOARD">
+		<RECORDLIST REGEX="HOSPITALITY_CANADA_INDUSTRIAL_RELATIONS_BOARD" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="dd-MM-yyyy">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA">
+		<RECORDLIST REGEX="TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_NATIONAL_DEFENCE">
+		<RECORDLIST REGEX="TRAVEL_NATIONAL_DEFENCE" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_NATIONAL_DEFENCE">
+		<RECORDLIST REGEX="HOSPITALITY_NATIONAL_DEFENCE" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_TREASURY_BOARD_OF_CANADA">
+		<RECORDLIST REGEX="TRAVEL_TREASURY_BOARD_OF_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_TREASURY_BOARD_OF_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_TREASURY_BOARD_OF_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_FOREIGN_AFFAIRS">
+		<RECORDLIST REGEX="TRAVEL_FOREIGN_AFFAIRS" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT REUSE BEGINS" SUFFIX="CONTENT REUSE ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_FOREIGN_AFFAIRS">
+		<RECORDLIST REGEX="HOSPITALITY_FOREIGN_AFFAIRS" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT REUSE BEGINS" SUFFIX="CONTENT REUSE ENDS" DATEFORMAT="dd/MM/yyyy">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_CANADA_REVENUE_AGENCY">
+		<RECORDLIST REGEX="TRAVEL_CANADA_REVENUE_AGENCY" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_CANADA_REVENUE_AGENCY">
+		<RECORDLIST REGEX="HOSPITALITY_CANADA_REVENUE_AGENCY" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_PRIVY_COUNSIL_OFFICE">
+		<RECORDLIST REGEX="TRAVEL_PRIVY_COUNSIL_OFFICE" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT TITLE ENDS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="" title="">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_PRIVY_COUNSIL_OFFICE">
+		<RECORDLIST REGEX="HOSPITALITY_PRIVY_COUNSIL_OFFICE" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT TITLE ENDS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="" title="">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_PAUL-MARTIN-OFFICE_PRIVY_COUNSIL_OFFICE">
+		<RECORDLIST REGEX="TRAVEL_PRIVY_COUNSIL_OFFICE" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT TITLE ENDS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="Paul Martin`s Office" title="Prime Minister">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_STEPHEN-HARPER-OFFICE_PRIVY_COUNSIL_OFFICE">
+		<RECORDLIST REGEX="HOSPITALITY_PRIVY_COUNSIL_OFFICE" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT TITLE ENDS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="Stephen Harper's Office" title="Prime Minister">
+		</RECORDLIST>
+	</URLTYPE>
+
+
+	<URLTYPE NAME="TEST_TRAVEL_BANK_OF_CANADA">
+		<RECORDLIST REGEX="TRAVEL_BANK_OF_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="(^(\s*{Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)\s*-.*?({\s*Total\s*}|{\s*Trip Expenses\s*}))|{\s*Total\s*})" SUFFIX="({Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)|$)">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_TRAVEL_BANK_OF_CANADA_ot">
+		<RECORDLIST REGEX="TRAVEL_BANK_OF_CANADA_ot" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="(^(\s*{Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)\s*-.*?({\s*Total\s*}|{\s*Trip Expenses\s*}))|{\s*Total\s*})" SUFFIX="({Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)|$)">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_HOSPITALITY_BANK_OF_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_BANK_OF_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+
+
+	<URLTYPE NAME="TEST_TRAVEL_AUDITOR">
+		<RECORDLIST REGEX="TRAVEL_AUDITOR" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_AUDITOR">
+		<RECORDLIST REGEX="HOSPITALITY_AUDITOR" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+
+	<URLTYPE NAME="TEST_TRAVEL_ACOA">
+		<RECORDLIST REGEX="TRAVEL_ACOA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_ACOA">
+		<RECORDLIST REGEX="HOSPITALITY_ACOA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_TRAVEL_CBSA">
+		<RECORDLIST REGEX="TRAVEL_CBSA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_CBSA">
+		<RECORDLIST REGEX="HOSPITALITY_CBSA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_CED">
+		<RECORDLIST REGEX="TRAVEL_CED" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="Lebel, Denis" title="Minister of State">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_CED">
+		<RECORDLIST REGEX="HOSPITALITY_CED" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member="Lebel, Denis" title="Minister of State">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_ENVIRONMENT_CANADA">
+		<RECORDLIST REGEX="TRAVEL_ENVIRONMENT_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="&lt;h2&gt;Travel &amp; Hospitality Reports&lt;/h2&gt;" SUFFIX="&lt;/table&gt;" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_ENVIRONMENT_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_ENVIRONMENT_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="&lt;h2&gt;Travel &amp; Hospitality Reports&lt;/h2&gt;" SUFFIX="&lt;/table&gt;" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_HOSPITALITY_CAPPRT">
+		<RECORDLIST REGEX="HOSPITALITY_CAPPRT" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_TRAVEL_HEALTH_CANADA">
+		<RECORDLIST REGEX="TRAVEL_HEALTH_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT TITLE BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member='Aglukkaq, Leona' title='Minister'>
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_HEALTH_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_HEALTH_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT TITLE BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd" member='Aglukkaq, Leona' title='Minister'>
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_TRAVEL_INDUSTRY_CANADA">
+		<RECORDLIST REGEX="TRAVEL_INDUSTRY_CANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BODY" SUFFIX="&lt;/table&gt;" DATEFORMAT="yyyy/MM/dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_INDUSTRY_CANADA">
+		<RECORDLIST REGEX="HOSPITALITY_INDUSTRY_CANADA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BODY" SUFFIX="&lt;/table&gt;" DATEFORMAT="yyyy/MM/dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="TEST_TRAVEL_CHRC">
+		<RECORDLIST REGEX="TRAVEL_CHRC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS.*?Detailed Report" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_HOSPITALITY_CHRC">
+		<RECORDLIST REGEX="HOSPITALITY_CHRC" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS.*?Detailed Report" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+
+	<URLTYPE NAME="TEST_TRAVEL_CIHR">
+		<RECORDLIST REGEX="TRAVEL_CIHR" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+
+
+
+<!--
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1254338287698&amp;lang=eng"></ROOTPAGE>
+    <ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1209668285148&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1209668389218&amp;lang=e"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1206728652213&amp;lang=e"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showtravel&amp;eid=9&amp;id=56"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showtravel&amp;eid=9&amp;id=40"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showtravel&amp;eid=9&amp;id=63"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showhosp&amp;eid=9&amp;id=7"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showhosp&amp;eid=11&amp;id=295"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CANADA_INDUSTRIAL_RELATIONS_BOARD" URL="http://www.cirb-ccri.gc.ca/disclosure-divulgation/travel-voyages/index_eng.asp?action=showhosp&amp;eid=11&amp;id=159"></ROOTPAGE>
+	
+    <ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3149&amp;empID=3&amp;year=2009&amp;q=1&amp;empType=4&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3338&amp;empID=289&amp;year=2009&amp;q=2&amp;empType=3&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3394&amp;empID=288&amp;year=2009&amp;q=2&amp;empType=3&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=1313&amp;empID=49&amp;year=2006&amp;q=2&amp;empType=4&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3658&amp;empID=199&amp;year=2009&amp;q=4&amp;empType=3&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=1309&amp;empID=184&amp;year=2006&amp;q=2&amp;empType=4&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=1339&amp;empID=49&amp;year=2006&amp;q=2&amp;empType=4&amp;r=t"></ROOTPAGE>
+    <ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3772&amp;empID=3&amp;year=2009&amp;empType=4&amp;q=1&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=2312&amp;empID=201&amp;year=2006&amp;empType=3&amp;q=3&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=2553&amp;empID=201&amp;year=2007&amp;empType=3&amp;q=1&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=2948&amp;empID=199&amp;year=2007&amp;empType=3&amp;q=2&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=206&amp;empID=79&amp;year=2004&amp;empType=3&amp;q=2&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=341&amp;empID=35&amp;year=2004&amp;empType=3&amp;q=2&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=2857&amp;empID=274&amp;year=2007&amp;empType=4&amp;q=3&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=1981&amp;empID=49&amp;year=2006&amp;empType=4&amp;q=1&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=1994&amp;empID=49&amp;year=2006&amp;empType=4&amp;q=1&amp;r=h"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_DEPARTMENT_OF_FINANCE_CANADA" URL="http://www.fin.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3532&amp;empID=209&amp;year=2008&amp;empType=4&amp;q=2&amp;r=h"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/details-eng.asp?RecordID=8612&amp;tableName=tblTravel_b&amp;id=1587&amp;PeriodID=24&amp;CA=FALSE"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/details-eng.asp?RecordID=4832&amp;tableName=tblTravel_b&amp;id=702&amp;PeriodID=12&amp;CA=FALSE"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/details-eng.asp?RecordID=8620&amp;tableName=tblTravel_b&amp;id=1587&amp;PeriodID=24&amp;CA=FALSE"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/he-ch-eng.asp?RecordID=4966&amp;tableName=tblHospitality_b&amp;id=713&amp;PeriodID=12&amp;CA=FALSE"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_NATIONAL_DEFENCE" URL="http://www.admfincs.forces.gc.ca/apps/th-vh/he-ch-eng.asp?RecordID=6269&amp;tableName=tblHospitality_b&amp;id=1228&amp;PeriodID=19&amp;CA=FALSE"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_TREASURY_BOARD_OF_CANADA" URL="http://www.tbs-sct.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3395&amp;empID=241&amp;year=2009&amp;q=2&amp;empType=1&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_TREASURY_BOARD_OF_CANADA" URL="http://www.tbs-sct.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3719&amp;empID=326&amp;year=2009&amp;q=3&amp;empType=1&amp;r=t"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_TREASURY_BOARD_OF_CANADA" URL="http://www.tbs-sct.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=3817&amp;empID=241&amp;year=2009&amp;empType=1&amp;q=2&amp;r=h"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_PUBLIC_SERVICE_AGENCY" URL="http://www.tbs-sct.gc.ca/expenses-frais/reports-rapports-eng.asp?eventID=2986&amp;empID=264&amp;year=2008&amp;q=3&amp;empType=7&amp;r=t"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/Detail.aspx?lang=eng&amp;dept=faae&amp;prof_id=350&amp;ya=2009&amp;ed_id=15331&amp;type=tv"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/Detail.aspx?lang=eng&amp;dept=faae&amp;prof_id=350&amp;ya=2009&amp;ed_id=15304&amp;type=tv"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/Detail.aspx?lang=eng&amp;dept=faae&amp;prof_id=169&amp;ya=2007&amp;ed_id=19680&amp;type=ha"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/arsenijevic2/2009/q4/2241t1-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/leclair/2006/q4/985t1-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/hillier/2004/q1/72t1-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/oriordan/2009/q3/1310h1-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CANADA_REVENUE_AGENCY" URL="http://www.cra-arc.gc.ca/gncy/xpnss/bowen2/2007/q4/1037h1-eng.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_PAUL-MARTIN-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=3278&amp;eid=1&amp;cat=4&amp;dept=8&amp;clientDeptID=211&amp;year=2005&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_STEPHEN-HARPER-OFFICE_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=8274&amp;eid=2&amp;cat=1&amp;dept=34&amp;client=355&amp;year=2008&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=5721&amp;eid=1&amp;cat=1&amp;dept=34&amp;clientDeptID=256&amp;year=2009&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=5720&amp;eid=1&amp;cat=1&amp;dept=34&amp;clientDeptID=256&amp;year=2009&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=5415&amp;eid=2&amp;cat=4&amp;dept=18&amp;client=143&amp;year=2006&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_PRIVY_COUNSIL_OFFICE" URL="http://www.pco-bcp.gc.ca/di/expense_detail.asp?id=9479&amp;eid=2&amp;cat=3&amp;dept=7&amp;client=357&amp;year=2009&amp;lang=eng"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_rc_2006-2007_RP2_e_24182.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_sf_2008-2009_RP4_e_33471.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_sf_2008-2009_RP2_e_32868.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/hos_ls_2008-2009_RP4_e_33383.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_sf_2006-2007_RP2_e_24194.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_jw_2005-2006_RP3_e_24318.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_rt_2003-2004_RP1_e_25122.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/tr_al_2008-2009_RP2_e_33268.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_ACOA" URL="http://cms.acoa-apeca.gc.ca/disclosure/content/th-va/period/List/expense.htm?expenseid=3656&amp;brpersist=true&amp;contactid=41509&amp;fiscalyear=2010&amp;quarter=Q3%20&amp;expense_type_cd=1"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_ACOA" URL="http://cms.acoa-apeca.gc.ca/disclosure/content/th-va/period/List/expense.htm?expenseid=3786&amp;brpersist=true&amp;contactid=41509&amp;fiscalyear=2010&amp;quarter=Q2%20&amp;expense_type_cd=2"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_ENVIRONMENT_CANADA" URL="http://www.ec.gc.ca/dthe-dfva/index.cfm?lang=En&amp;state=detail&amp;quarter=4&amp;fiscal=2009&amp;pID=238&amp;expID=111539"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_ENVIRONMENT_CANADA" URL="http://www.ec.gc.ca/dthe-dfva/index.cfm?lang=En&amp;state=detail&amp;quarter=3&amp;fiscal=2009&amp;pID=244&amp;expID=111655"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_ENVIRONMENT_CANADA" URL="http://www.ec.gc.ca/dthe-dfva/index.cfm?lang=En&amp;state=detail&amp;quarter=4&amp;fiscal=2009&amp;pID=239&amp;expID=111577"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_ENVIRONMENT_CANADA" URL="http://www.ec.gc.ca/dthe-dfva/index.cfm?lang=En&amp;state=detail&amp;quarter=3&amp;fiscal=2009&amp;pID=244&amp;expID=111663"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_AUDITOR" URL="http://www.oag-bvg.gc.ca/internet/English/hos_mw_2007-2008_RP2_e_31686.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2004/pd_travel_q1_2004.pdf"></ROOTPAGE>
+	
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA_ot" URL="http://www.bankofcanada.ca/en/expenses/2005/jenkins_travel_june_2005.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA_ot" URL="http://www.bankofcanada.ca/en/expenses/2004/pj_travel_q1_2004.pdf"></ROOTPAGE>
+-->	
+	
+<!--
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_june_2009.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_dec_2009.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2004/longworth_travel_dec_2004.pdf"></ROOTPAGE>
+-->
+
+
+<!-- NOT COMPLETE
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/longworth_travel_sept_2009.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2004/longworth_travel_dec_2004.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_BANK_OF_CANADA" URL="http://www.bankofcanada.ca/en/expenses/2008/carney_hosp_sept_2008.pdf"></ROOTPAGE>
+
+-->
+
+<!--
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CBSA" URL="http://www.cbsa-asfc.gc.ca/pd-dp/th-va/rigby2/2009/q4_tv376-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CBSA" URL="http://www.cbsa-asfc.gc.ca/pd-dp/th-va/rigby2/2009/q4_ha252-eng.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CED" URL="http://www.dec-ced.gc.ca/eng/disclosure/travel-hospitality/detail-1.html?p_ide_voyg=1866"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CED" URL="http://www.dec-ced.gc.ca/eng/disclosure/travel-hospitality/detail-2.html?p_ide_accl=575"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CAPPRT" URL="http://www.capprt-tcrpap.gc.ca/eic/site/capprt-tcrpap.nsf/eng/tn00379.html"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_INDUSTRY_CANADA" URL="http://www.ic.gc.ca/app/ic/trvlHsptltyDsclsr/pblc/trvlExpnsDtls.do;jsessionid=0000NBY-6lEgW-QwJCCwuBX3Yhy:1247mpv0c?lang=eng&amp;qrtrId=422&amp;expnsTyp=1&amp;offclTyp=1&amp;expnsId=19076"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_INDUSTRY_CANADA" URL="http://www.ic.gc.ca/app/ic/trvlHsptltyDsclsr/pblc/hsptltyExpnsDtls.do;jsessionid=0000vqRYYRLxr1bSdbf-VPdvhtW:1247mpv0c?lang=eng&amp;qrtrId=122&amp;expnsTyp=2&amp;offclTyp=1&amp;expnsId=3434"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_HEALTH_CANADA" URL="http://www.thexpenses-fraisva.hc-sc.gc.ca/cfob/dpfad/expensetracking.nsf/unid/5F9A42D54BA716CE8525764900553799?OpenDocument&amp;lang=eng&amp;nm=Canning,+Leah&amp;jt=Director+of+Policy&amp;24"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_HEALTH_CANADA" URL="http://www.thexpenses-fraisva.hc-sc.gc.ca/cfob/dpfad/expensetracking.nsf/unid/FAF29F5E5A928DEF852576740067DA1B?OpenDocument&amp;lang=eng&amp;nm=Aglukkaq,+Leona&amp;jt=Minister&amp;24"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_HEALTH_CANADA" URL="http://www.thexpenses-fraisva.hc-sc.gc.ca/cfob/dpfad/expensetracking.nsf/unid/6E0FFADC6CDE47F185257639005F188A?OpenDocument&amp;lang=eng&amp;nm=Aglukkaq,+Leona&amp;jt=Minister&amp;24"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_CHRC" URL="http://www.chrc-ccdp.ca/about/expenserpts_rappdepenses/quarter1_trimestre1/hospitality_sg_accueil-en.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CHRC" URL="http://www.chrc-ccdp.ca/disclosure_divulgation/quarter3_trimestre3/travel_2008_cc_voyage_page2-en.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CIHR" URL="http://www.cihr-irsc.gc.ca/e/39008.html"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_HEALTH_CANADA" URL="http://www.thexpenses-fraisva.hc-sc.gc.ca/cfob/dpfad/expensetracking.nsf/unid/5F9A42D54BA716CE8525764900553799?OpenDocument&amp;lang=eng&amp;nm=Canning,+Leah&amp;jt=Director+of+Policy&amp;24"></ROOTPAGE>
+
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1254338287698&amp;lang=eng"></ROOTPAGE>
+    <ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1209668285148&amp;lang=eng"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1209668389218&amp;lang=e"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_AGRICULTURE" URL="http://www4.agr.gc.ca/AAFC-AAC/display-afficher.do?id=1206728652213&amp;lang=e"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_CIDA" URL="http://www.acdi-cida.gc.ca/acdi-cida/acdi-cida.nsf/eng/EMA-218122215-PSL"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_CIDA" URL="http://www.acdi-cida.gc.ca/acdi-cida/acdi-cida.nsf/eng/NAT-325112836-L6F"></ROOTPAGE>
+
+
+-->
+
+
+
+	<URLTYPE NAME="TEST_CIDA">
+		<RECORDLIST REGEX="TRAVEL_CIDA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="&lt;title&gt;(?'member'[^,&lt;]+),(?'title'[^&amp;&lt;]+)&amp;#8212;.*?CONTENT BEGINS.*?Detailed Travel Expenses" SUFFIX="Detailed Hospitality Expenses|Detailed Travel Hospitality|CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+		<RECORDLIST REGEX="HOSPITALITY_CIDA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="&lt;title&gt;(?'member'[^,&lt;]+),(?'title'[^&amp;&lt;]+)&amp;#8212;.*?CONTENT BEGINS.*?(Detailed Hospitality Expenses|Detailed Travel Hospitality)" SUFFIX="Detailed Travel Expenses|CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	
+
+	<URLTYPE NAME="TEST_CSA2">
+		<RECORDLIST REGEX="TRAVEL_CSA2" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="Travel expenses" SUFFIX="Hospitality expenses|CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<!--
+	<ROOTPAGE URLTYPE="TEST_CSA2" URL="http://www5.asc-csa.gc.ca/eng/publications/travel-president2-2006d.asp#1"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_CSA2" URL="http://www5.asc-csa.gc.ca/eng/publications/travel-president-2004d.asp"></ROOTPAGE>
+-->
+
+
+
+	<URLTYPE NAME="TEST_CTA">
+		<RECORDLIST REGEX="HOSPITALITY_CTA" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="&lt;h2&gt;" SUFFIX="/table" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_CTA" URL="http://www.otc-cta.gc.ca/pd-cp/hospitality-accueil.php?haid=85&amp;dt=2005-03-02&amp;lang=eng"></ROOTPAGE>
+	-->
+
+	<URLTYPE NAME="TEST_CIC">
+		<RECORDLIST REGEX="HOSPITALITY_CIC" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="Detailed Report" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_TRAVEL_CIC">
+		<RECORDLIST REGEX="TRAVEL_CIC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="Detailed Report" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_CIC" URL="http://www.cic.gc.ca/english/disclosure/expenses/2009-Q4/other/h-002.asp"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CIC" URL="http://www.cic.gc.ca/english/disclosure/expenses/2007-Q2/finley/t-002.asp"></ROOTPAGE>
+	-->
+
+
+	<URLTYPE NAME="TEST_TRAVEL_CSC">
+		<RECORDLIST REGEX="TRAVEL_CSC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_TRAVEL_CSC" URL="http://www.csc-scc.gc.ca/text/travel/head_don/travel-expense13-eng.shtml"></ROOTPAGE>
+	-->
+
+	<URLTYPE NAME="TEST_DFO">
+		<RECORDLIST REGEX="TRAVEL_DFO" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_DFO2">
+		<RECORDLIST REGEX="HOSPITALITY_DFO" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_DFO" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailtravel_e.asp?g=2&amp;id=44052&amp;emp=52"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_DFO" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailtravel_e.asp?g=2&amp;id=45692&amp;emp=99"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_DFO2" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailhospitality_e.asp?g=2&amp;id=29023&amp;emp=99"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_DFO2" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailhospitality_e.asp?g=11&amp;id=27153&amp;emp=39"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_DFO2" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailhospitality_e.asp?g=1&amp;id=29393&amp;emp=135"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_DFO" URL="http://www.dfo-mpo.gc.ca/dthe-dfva/detailtravel_e.asp?g=12&amp;id=45298&amp;emp=81"></ROOTPAGE>
+	-->
+
+
+
+	<URLTYPE NAME="TEST_AINC">
+		<RECORDLIST REGEX="HOSPITALITY_AINC" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+  <URLTYPE NAME="TEST_AINC2">
+    <RECORDLIST REGEX="TRAVEL_AINC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+    </RECORDLIST>
+  </URLTYPE>
+  <!--
+	<ROOTPAGE URLTYPE="TEST_AINC" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/07-2/riouxj/07-h1-eng.asp"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="TEST_AINC" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/07-2/cramc/07-h1-eng.asp"></ROOTPAGE>
+  <ROOTPAGE URLTYPE="TEST_AINC2" URL="http://www.ainc-inac.gc.ca/prodis/exprpts/07-2/dupuism/07-t1-eng.asp"></ROOTPAGE>
+	-->
+
+
+  <URLTYPE NAME="TEST_CH">
+		<RECORDLIST REGEX="TRAVEL_CH" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_CH" URL="http://www.pch.gc.ca/pc-ch/dp-pd/va-th/verner_josee/2008/voyage-travel/2008-01-07-eng.cfm"></ROOTPAGE>
+	-->
+
+	<URLTYPE NAME="TEST_MPCC">
+		<RECORDLIST REGEX="TRAVEL_MPCC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_MPCC" URL="http://www.mpcc-cppm.gc.ca/600/6100/2009/tinsley_1120-25-eng.aspx"></ROOTPAGE>
+	-->
+
+	<URLTYPE NAME="TEST_RCMP">
+		<RECORDLIST REGEX="TRAVEL_RCMP" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_RCMP2">
+		<RECORDLIST REGEX="HOSPITALITY_RCMP" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<!--
+	<ROOTPAGE URLTYPE="TEST_RCMP2" URL="http://www.grc-rcmp.gc.ca/pd-dp/travhosp-voyacc/2005-03-01/lynch/hospform-accoff/2004-12-03-fra.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_RCMP" URL="http://www.grc-rcmp.gc.ca/pd-dp/travhosp-voyacc/2009-12-01/macintyre/travel-voyage/2009-11-15-eng.htm"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_RCMP" URL="http://www.grc-rcmp.gc.ca/pd-dp/travhosp-voyacc/2010-03-01/sweeney/travel-voyage/2010-02-03-eng.htm"></ROOTPAGE>
+	-->
+
+
+	<URLTYPE NAME="TEST_NEB">
+		<RECORDLIST REGEX="TRAVEL_NEB" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="content window start" SUFFIX="content window end" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_NEB" URL="http://www.neb-one.gc.ca/trvlndhsptlty/trvldtl.aspx?lang=E&amp;expenseid=843"></ROOTPAGE>
+-->
+
+	<URLTYPE NAME="TEST_NRC">
+		<RECORDLIST REGEX="TRAVEL_NRC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<!--
+	<ROOTPAGE URLTYPE="TEST_NRC" URL="http://www.nrc-cnrc.gc.ca/eng/disclosure/travel/index.php?action=travel_details&amp;pid=169&amp;expense_id=2816"></ROOTPAGE>
+	-->
+
+
+	<URLTYPE NAME="TEST_VAC">
+		<RECORDLIST REGEX="TRAVEL_VAC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="&lt;a name=&quot;cont&quot; id=&quot;cont&quot;&gt;" SUFFIX="FOOTER BEGINS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+	<URLTYPE NAME="TEST_VAC2">
+		<RECORDLIST REGEX="HOSPITALITY_VAC" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="&lt;a name=&quot;cont&quot; id=&quot;cont&quot;&gt;" SUFFIX="FOOTER BEGINS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+<!---
+	<ROOTPAGE URLTYPE="TEST_VAC2" URL="http://www.vac-acc.gc.ca/general/sub.cfm?source=department/dthe/hs_detail&amp;hs_id=929&amp;staff_id=36&amp;cat_id=1"></ROOTPAGE>
+-->
+
+
+	<URLTYPE NAME="TEST_OCOL">
+		<RECORDLIST REGEX="TRAVEL_OCOL" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="centerContentSub" SUFFIX="&lt;div id=&quot;footer&quot;&gt;" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+<!--
+	<ROOTPAGE URLTYPE="TEST_OCOL" URL="http://www.ocol-clo.gc.ca/html/dp_te_75_e.php"></ROOTPAGE>
+-->
+
+	<URLTYPE NAME="TEST_NSERC">
+		<RECORDLIST REGEX="TRAVEL_NSERC" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy-MM-dd">
+		</RECORDLIST>
+	</URLTYPE>
+<!--
+	<ROOTPAGE URLTYPE="TEST_NSERC" URL="http://www.nserc-crsng.gc.ca/Disclosure-Divulgation/HospitalityExpense-FraisAccueil_eng.asp?EID=5&amp;PID=4&amp;ID=58"></ROOTPAGE>
+-->
+
+	<URLTYPE NAME="TEST_OCL">
+		<RECORDLIST REGEX="HOSPITALITY_OCL" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT BEGINS" SUFFIX="CONTENT ENDS" DATEFORMAT="yyyy/MM/dd" title="" member="Unknown">
+		</RECORDLIST>
+	</URLTYPE>
+<!--
+  <ROOTPAGE URLTYPE="TEST_OCL" URL="http://www.ocl-cal.gc.ca/eic/site/lobbyist-lobbyiste1.nsf/eng/nx00131.html"></ROOTPAGE>
+-->
+	
+</CATERPILLAR>

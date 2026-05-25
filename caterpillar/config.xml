@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<CATERPILLAR>
+
+	<!-- 
+	Identifies the log filename and the warning level to log 
+		// Warning Level specifies how many warnings/errors you want logged
+		// Warning Level 0 only prints fatal errors
+		// Warning Level 1 prints all errors and warnings
+		// Warning Level 2 prints all errors and warnings and extra information messages
+		// Warning Level 3 prints all previous info plus additional verbose debugging details
+	-->
+	<LOGGING FILENAME="errors.log" WARNINGLEVEL="3"></LOGGING>
+	
+	
+	<!-- This is the database to use for our repository -->
+<!--
+	<DATABASE NAME="TRAVELDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="raw_travel"></DATABASE>
+	<DATABASE NAME="HOSPITALITYDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="raw_hospitality"></DATABASE>
+-->
+	<DATABASE NAME="TRAVELDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="sandbox_travel"></DATABASE>
+	<DATABASE NAME="HOSPITALITYDB" CONNECTIONSTRING="Data Source=bine.ca;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="sandbox_hospitality"></DATABASE>
+
+	<!-- Each RECORDTYPE entry specifies a record structure which is to be scraped from the web and inserted into a database -->
+
+	<RECORDTYPE NAME="TRAVEL">
+		<PARAMETER NAME="title" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="member" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="purpose" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="date_from" TYPE="DateParameter"></PARAMETER>
+		<PARAMETER NAME="date_to" TYPE="DateParameter"></PARAMETER>
+		<PARAMETER NAME="destination" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="commercial_flight" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="chartered_flight" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="government_aircraft" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="other_transportation" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="accommodation" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="meals_incidentals" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="other" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="total" TYPE="DecimalParameter"></PARAMETER>
+	</RECORDTYPE>
+	
+	<RECORDTYPE NAME="HOSPITALITY">
+		<PARAMETER NAME="title" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="member" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="description" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="form_of_hospitality" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="date_from" TYPE="DateParameter"></PARAMETER>
+		<PARAMETER NAME="date_to" TYPE="DateParameter"></PARAMETER>
+		<PARAMETER NAME="employees" TYPE="IntParameter"></PARAMETER>
+		<PARAMETER NAME="guests" TYPE="IntParameter"></PARAMETER>
+		<PARAMETER NAME="location" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="establishment" TYPE="StringParameter"></PARAMETER>
+		<PARAMETER NAME="total" TYPE="DecimalParameter"></PARAMETER>
+		<PARAMETER NAME="department_id" TYPE="IntParameter"></PARAMETER>
+		<PARAMETER NAME="comments" TYPE="StringParameter"></PARAMETER>
+	</RECORDTYPE>
+
+	
+	<REGEX NAME="URL" REGEX="&lt;A\s+[^&gt;]*HREF\s*=\s*('(?'URL'[^&gt;']+)'|&quot;(?'URL'[^&gt;&quot;]+)&quot;|(?'URL'[^&gt;\s]+))[^&gt;]*&gt;"></REGEX>
+	<REGEX NAME="TRAVEL" REGEX="&lt;strong&gt;Travel Expense&lt;/strong&gt;(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'member'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'purpose'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;\s*(?'date_from'[^\s]+)\s+to\s+(?'date_to'[^\s&lt;]+)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'destination'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'commercial_flight'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'other_transportation'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'accommodation'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'meals_incidentals'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'other'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'total'[^&lt;]*)"></REGEX>
+	<REGEX NAME="TRAVEL_FULL" REGEX="&lt;strong&gt;Travel Expense&lt;/strong&gt;(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'member'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'purpose'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;\s*(?'date_from'[^\s]+)\s+to\s+(?'date_to'[^\s&lt;]+)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'destination'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'commercial_flight'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'other_transportation'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'accommodation'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'meals_incidentals'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'other'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'total'[^&lt;]*)"></REGEX>
+	<REGEX NAME="HOSPITALITY" REGEX="&lt;strong&gt;Hospitality Expense&lt;/strong&gt;(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'member'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'description'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'date_from'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;([^\d]*(?'employees'\d+)[^\d]+(?'guests'\d*)[^\d])?(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'location'[^&lt;]*)(?>.*?&lt;td)(?>.*?&lt;td).*?&gt;(?'total'[^&lt;]*)"></REGEX>
+
+
+	
+	
+	<REGEX NAME="URL_TRAVEL" REGEX="&lt;A\s+[^&gt;]*HREF\s*=\s*('(?'URL'[^&gt;']+)'|&quot;(?'URL'[^&gt;&quot;]+)&quot;|(?'URL'[^&gt;\s]+))[^&gt;]*&gt;Travel"></REGEX>
+	<REGEX NAME="URL_HOSPITALITY" REGEX="&lt;A\s+[^&gt;]*HREF\s*=\s*('(?'URL'[^&gt;']+)'|&quot;(?'URL'[^&gt;&quot;]+)&quot;|(?'URL'[^&gt;\s]+))[^&gt;]*&gt;Hospitality"></REGEX>
+	<REGEX NAME="TRAVEL_BANKOFCANADA" REGEX="{(?'day_from'\d+)[^\d}\w]+(?'day_to'\d+)?\s*(?'month'\w+)}(?'destination'({[^}]*\s}\s*)*{[^}]*[^\s]})\s*(?'purpose'({[^}]+}\s*)+?){(?'other_transportation'[\d,.]+|-)}.*?{(?'accommodation'[\d,.]+|-)}.*?{(?'meals_incidentals'[\d,.]+|-)}.*?{(?'other'[\d,.]+|-)}.*?{(?'total'[\d,.]+|-)}"></REGEX>
+
+	<URLTYPE NAME="TEST_BANKOFCANADA">
+		<RECORDLIST REGEX="TRAVEL_BANKOFCANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="{Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)\s*-.*?{\s*Total\s*}" SUFFIX="">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<URLTYPE NAME="THREELEVEL_BANKOFCANADA">
+		<URLLIST REGEX="URL" PREFIX="Governing Council" SUFFIX="&lt;!-- end inside --&gt;">
+			<URLLIST REGEX="URL_TRAVEL" PREFIX="Governing Council" SUFFIX="&lt;!-- end inside --&gt;">
+				<RECORDLIST REGEX="TRAVEL_BANKOFCANADA" RECORDTYPE="TRAVEL" DATABASE="TRAVELDB" PREFIX="({Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)\s*-.*?)?{\s*Other\s*}" SUFFIX="({Travel Expenses\s*-\s*(?'member'[^-]+)\s*-\s*(?'title'[^-]+)\s*-)?">
+				</RECORDLIST>
+			</URLLIST>
+			<URLLIST REGEX="URL_HOSPITALITY" PREFIX="Governing Council" SUFFIX="&lt;!-- end inside --&gt;">
+				
+			</URLLIST>
+		</URLLIST>
+	</URLTYPE>
+
+
+
+	<ROOTPAGE URLTYPE="TEST_BANKOFCANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_dec_2009.pdf"></ROOTPAGE>
+	<!--
+
+	<ROOTPAGE URLTYPE="THREELEVEL_BANKOFCANADA" URL="http://www.bankofcanada.ca/en/expenses/"></ROOTPAGE>
+	TODO - test this for hospitality
+	http://www.bankofcanada.ca/en/expenses/2003/jenkins_hosp_april_2004.pdf
+	
+	<ROOTPAGE URLTYPE="TEST_BANKOFCANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_june_2009.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_BANKOFCANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_sept_2009.pdf"></ROOTPAGE>
+	<ROOTPAGE URLTYPE="TEST_BANKOFCANADA" URL="http://www.bankofcanada.ca/en/expenses/2009/carney_travel_dec_2009.pdf"></ROOTPAGE>
+	
+	
+	<REGEX NAME="HOSPITALITY_FOREIGN_AFFAIRS" REGEX="&gt;Expense List&lt;/a&gt;(?>.*?&lt;h2).*?&gt;(?>.*?&lt;span).*?&gt;(?'member'[^,]+),\s*(?'title'[^&lt;]+)&lt;(?>.*?&lt;td).*?&gt;(?'description'[^&lt;]*)&lt;(?>.*?&lt;td).*?&gt;\s*(?'date_from'[^&lt;]+)&lt;(?>.*?&lt;td).*?&gt;(\d+[^\d&lt;]+(?'employees'\d+)[^\d&lt;]+(?'guests'\d+)|(?'employees'\d+))[^&lt;]*&lt;(?>.*?&lt;td).*?&gt;(?'location'[^&lt;]*)&lt;(?>.*?&lt;td).*?&gt;(?'total'[^&lt;]*)&lt;(?>.*?&lt;td).*?&gt;(?'comments'[^&lt;]*)"></REGEX>
+	<URLTYPE NAME="TEST_HOSPITALITY_FOREIGN_AFFAIRS">
+		<RECORDLIST REGEX="HOSPITALITY_FOREIGN_AFFAIRS" RECORDTYPE="HOSPITALITY" DATABASE="HOSPITALITYDB" PREFIX="CONTENT REUSE BEGINS" SUFFIX="CONTENT REUSE ENDS" DATEFORMAT="dd/MM/yyyy">
+		</RECORDLIST>
+	</URLTYPE>
+
+	<ROOTPAGE URLTYPE="TEST_HOSPITALITY_FOREIGN_AFFAIRS" URL="http://w01.international.gc.ca/dthe-dfva/Detail.aspx?lang=eng&amp;dept=faae&amp;prof_id=297&amp;ya=2009&amp;ed_id=24422&amp;type=ha"></ROOTPAGE>
+	-->
+
+
+
+</CATERPILLAR>

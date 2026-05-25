@@ -1,0 +1,104 @@
+﻿body
+{
+	font-family: Arial, Sans-Serif;
+	background-color: #6699CC;
+	margin: 0px;
+}
+
+.master {
+	width: 800px;
+	margin: auto;
+	background-color: #FFFFFF;
+	padding: 20px;
+}
+
+.hilite_link 
+{
+	color: Navy;
+}
+
+.tab 
+{
+	
+}
+
+h1 {
+	color: #ff0000;
+	font-size: 1.8em;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 1.2em;
+}
+
+h3 {
+	background-color: #ccccff;
+}
+
+.nounderline {
+	text-decoration: none;
+}
+
+.intro {
+	font-size: 1em;
+}
+
+.bigtext {
+	font-size: 1.2em;
+}
+
+.mediumtext {
+	font-size: 1em;
+}
+
+.smalltext {
+	font-size: 0.8em;
+}
+
+.tinytext {
+	font-size: 0.7em;
+}
+
+.tablelist {
+	background-color: #000000;
+}
+.tablelist TH, .tablelist TD {
+	background-color: #ffffff;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+.importantbox {
+	border: solid 1px black;
+	padding: 10px;
+	text-align: center;
+}
+
+.quotebox {
+	width:200px;
+	float:right;
+	font-size: 1.1em;
+	padding: 10px;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	border-top: solid 2px black;
+	border-bottom: solid 2px black;
+	font-weight: bold;
+}
+
+/* Rounded buttons code */
+.roundedbutton {background-color: #9BD1FA;text-align:center}
+.roundedbutton A {text-decoration:none;font-weight:bold}
+.rtop, .rbottom{display:block; background: #FFF}
+.rtop *, .rbottom *{display: block; height: 1px; overflow: hidden; background: #9BD1FA}
+.r1{margin: 0 5px}
+.r2{margin: 0 3px}
+.r3{margin: 0 2px}
+.r4{margin: 0 1px; height: 2px} 
+
+

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<CATERPILLAR>
+
+	<!-- This is the database to use for our repository -->
+	<DATABASE NAME="dbname" CONNECTIONSTRING="Data Source=208.67.225.41;Database=metamorph;uid=caterpillar;pwd=metamorphosis" TABLE="table1"></DATABASE>
+
+	<!-- Each RECORDTYPE entry specifies a record structure which is to be scraped from the web and inserted into a database -->
+	<RECORDTYPE NAME="typename">
+		<PARAMETER NAME="value1" TYPE="IntParameter"></PARAMETER>
+	</RECORDTYPE>
+
+
+	<!-- Each ROOTPAGE entry specifies a starting point for the caterpillar crawler  -->
+	<ROOTPAGE URL="http://bine.ca">
+
+		<!-- Each URLLIST entry specifies a page which contains links to other pages, which will be recursed -->
+		<!-- NOTE: REGEX in a URLLIST must contain named parameter URL -->
+		<URLLIST REGEX="&lt;A\s+[^&gt;]*HREF\s*=\s*('(?'URL'[^&gt;]+)'|&quot;(?'URL'[^&gt;]+)&quot;|(?'URL'[^&gt;\s]+))[^&gt;]*&gt;">
+
+			<!-- Each RECORDLIST entry specifies a page which contains one or more records to be acquired -->
+			<!-- NOTE: REGEX in a RECORDLIST must contain named parameters for each paramname in specified RECORDTYPE -->
+			<RECORDLIST REGEX="[^\d](?'value1'100\d+)[^\d]" RECORDTYPE="typename" DATABASE="dbname">
+			</RECORDLIST>
+
+		</URLLIST>
+
+	</ROOTPAGE>
+
+</CATERPILLAR>

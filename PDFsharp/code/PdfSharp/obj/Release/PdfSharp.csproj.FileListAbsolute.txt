@@ -1,0 +1,11 @@
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\bin\Release\PdfSharp.XML
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\bin\Release\PdfSharp.dll
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\bin\Release\de\PdfSharp.resources.dll
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\ResolveAssemblyReference.cache
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.Forms.PagePreview.resources
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.Forms.PagePreviewCanvas.resources
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.Resources.Messages.resources
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.Resources.Messages.de.resources
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.csproj.GenerateResource.Cache
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\de\PdfSharp.resources.dll
+D:\BINE Projects\Metamorph\PDFsharp\code\PdfSharp\obj\Release\PdfSharp.dll

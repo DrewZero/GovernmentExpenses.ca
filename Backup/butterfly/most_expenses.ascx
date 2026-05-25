@@ -1,0 +1,28 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="most_expenses.ascx.cs" Inherits="Metamorph.most_expenses" %>
+
+	<asp:Repeater ID="ctlMostExpenses" runat="server">
+		<HeaderTemplate>
+			<table class="tablelist">
+			<tr>
+				<th>Member Name</th>
+				<th>Department</th>
+				<th>Title</th>
+				<th>Total</th>
+			</tr>
+		</HeaderTemplate>
+		<ItemTemplate>
+			<tr>
+				<td>
+					<a href="/drilldown.aspx?member_id=<%# DataBinder.Eval(Container.DataItem, "member_id") %>&member_name=<%# HttpUtility.UrlEncode(DataBinder.Eval(Container.DataItem, "member_name").ToString()) %>&<%# m_query %>">
+						<%# HttpUtility.HtmlEncode(DataBinder.Eval(Container.DataItem, "member_name").ToString()) %>
+					</a>
+				</td>
+				<td><%# HttpUtility.HtmlEncode(DataBinder.Eval(Container.DataItem, "department_name").ToString()) %></td>
+				<td><%# HttpUtility.HtmlEncode(DataBinder.Eval(Container.DataItem, "member_title").ToString()) %></td>
+				<td><%# DataBinder.Eval(Container.DataItem, "total") %></td>
+			</tr>
+		</ItemTemplate>
+		<FooterTemplate>
+			</table>
+		</FooterTemplate>
+	</asp:Repeater>
