@@ -1,6 +1,6 @@
 # GovernmentExpenses.ca 
-![Dollar Flag](/butterfly/images/Dollar%20Flag.png)
-[Government Expenses in Canada](https://governmentexpenses.ca)
+[![Dollar Flag](/butterfly/images/Dollar%20Flag.png)
+Government Expenses in Canada](https://governmentexpenses.ca)
 
 GovernmentExpenses.ca is a legacy transparency project that aggregates Canadian federal travel and hospitality disclosures into a searchable website. The public-facing site explains that the project started after its author found official proactive-disclosure pages too fragmented and time-consuming to analyze by hand, and Maclean's later highlighted the site as an important contribution to public accountability.
 
