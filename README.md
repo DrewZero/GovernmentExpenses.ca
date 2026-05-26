@@ -1,4 +1,4 @@
-# GovernmentExpenses.ca
+# GovernmentExpenses.ca [Government Expenses in Canada](https://governmentexpenses.ca)
 
 GovernmentExpenses.ca is a legacy transparency project that aggregates Canadian federal travel and hospitality disclosures into a searchable website. The public-facing site explains that the project started after its author found official proactive-disclosure pages too fragmented and time-consuming to analyze by hand, and Maclean's later highlighted the site as an important contribution to public accountability.
 
@@ -64,7 +64,7 @@ In practice, this project likely needs a Windows machine with legacy Visual Stud
 
 Useful background links:
 
-- GovernmentExpenses.ca about page (mirrored in `butterfly/about.aspx`)
+- GovernmentExpenses.ca about page (mirrored in `butterfly/about.aspx`) [About](https://governmentexpenses.ca/about.html)
 - Maclean's: [Information needs to be free](https://www.macleans.ca/politics/ottawa/information-needs-to-be-free/)
 - Maclean's: [High-flying civil servants](https://www.macleans.ca/news/canada/high-flying-civil-servants/)
 - Maclean's: [Is public data the future of governance?](https://www.macleans.ca/society/technology/power-to-the-people/)
